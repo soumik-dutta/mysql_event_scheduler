@@ -106,7 +106,12 @@ SET GLOBAL event_scheduler = ON;
 SET GLOBAL event_scheduler = OFF;
 ```
 
-Then start EMAIL_ESCALATION.sql
+Then start CREATING.EVENT.sql
+
+>The Event can be schedulable to a time interval 
+>and will call a procedure __notify_user_by_email()__.
+>This will intern call the Application server URL/URI
+>where the listener for this event is resided.
 
 
 
