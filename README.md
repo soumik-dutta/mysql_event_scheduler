@@ -99,10 +99,11 @@ Details refer: [apparmor link][link2]
 
 ### Mysql Event
 
-Please enable the event_scheduler in Mysql
+Please enable/disable the event_scheduler in Mysql
 
 ```sql
 SET GLOBAL event_scheduler = ON;
+SET GLOBAL event_scheduler = OFF;
 ```
 
 Then start EMAIL_ESCALATION.sql
