@@ -27,6 +27,8 @@ DELIMITER
 		
 -- switch on the event_schedular	
 SET GLOBAL event_scheduler = ON;
+SET GLOBAL event_scheduler = OFF;
+
 show errors;
 show WARNINGS;
 
