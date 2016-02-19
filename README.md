@@ -49,7 +49,7 @@ mysql> SHOW VARIABLES LIKE 'plugin_dir';
 To know more [plugin dir in mysql][link1]
 
 ##### Lets create the function that will communicate with the operating system .
-```sh
+```sql
 CREATE FUNCTION sys_eval RETURNS INT SONAME ‘lib_mysqludf_sys.so';
 ```
 
