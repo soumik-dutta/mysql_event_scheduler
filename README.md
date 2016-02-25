@@ -104,6 +104,7 @@ sudo vi /etc/selinux/config
 SELINUX=disabled
 ```
 Then reboot your system
+
 Details refer: [SElinux link][link3]
 
 ### Mysql Event
