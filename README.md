@@ -52,7 +52,7 @@ To know more [plugin dir in mysql][link1]
 ```sql
 CREATE FUNCTION sys_eval RETURNS INT SONAME ‘lib_mysqludf_sys.so';
 ```
-
+### For Ubuntu
 Also check the Application Armor protection
 ```sh
 $ sudo aa-status
@@ -97,6 +97,14 @@ sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
 ```
 Details refer: [apparmor link][link2]
 
+### For CentOS
+If  `Curl` command doesn't have permission then change the `SElinux` variable in the `/etc/selinux/config` file.
+```sh
+sudo vi /etc/selinux/config
+SELINUX=disabled
+```
+Details refer: [SElinux link][link3]
+
 ### Mysql Event
 
 Please enable/disable the event_scheduler in Mysql
@@ -121,7 +129,7 @@ Then start CREATING.EVENT.sql
 
    [link1]: <http://stackoverflow.com/questions/28642274/error-1126-hy000-cant-open-shared-library-lib-mysqludf-sys-so-errno-193>
    [link2]:<http://www.cyberciti.biz/faq/ubuntu-linux-howto-disable-apparmor-commands/>
-   
+   [link3]:<http://www.akashif.co.uk/php/curl-error-7-failed-to-connect-to-permission-denied/>
 
 
 © 2016 GitHub, Inc. Terms Privacy Security Contact Help
