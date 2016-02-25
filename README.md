@@ -103,6 +103,7 @@ If  `Curl` command doesn't have permission then change the `SElinux` variable in
 sudo vi /etc/selinux/config
 SELINUX=disabled
 ```
+Then reboot your system
 Details refer: [SElinux link][link3]
 
 ### Mysql Event
@@ -117,7 +118,7 @@ SET GLOBAL event_scheduler = OFF;
 Then start CREATING.EVENT.sql
 
 >The Event can be schedulable to a time interval 
->and will call a procedure __notify_user_by_email()__.
+>and will call a procedure `notify_user_by_email()`.
 >This will intern call the Application server URL/URI
 >where the listener for this event is resided.
 
