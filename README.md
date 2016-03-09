@@ -109,7 +109,7 @@ Details refer: [SElinux link][link3]
 
 ### Mysql Event
 
-Please enable/disable the event_scheduler in Mysql
+You could enable/disable the event_scheduler in Mysql
 
 ```sql
 SET GLOBAL event_scheduler = ON;
